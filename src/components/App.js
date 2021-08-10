@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import NavBar from './NavBar';
 import ItemListContainer from './ItemListContainer';
+import ItemCount from './ItemCount';
+
 
 class App extends Component {
   render() {
@@ -9,6 +11,7 @@ class App extends Component {
       <div>
         <NavBar/>
         <ItemListContainer nombre="Tom"/>
+        <ItemCount/>
       </div>
 );
   }
