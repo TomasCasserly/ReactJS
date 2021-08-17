@@ -1,12 +1,38 @@
-import React from 'react';
-import ItemList from './ItemList';
+import React, {useState} from 'react';
 
 
-class ItemListContainer extends React.Component{
-    render (){
-        return <div style={{color:"green", fontSize:"larger", fontWeight:"bolder"}}>{this.props.nombre}, en tu carrito tenés los siguientes productos...<ItemList/>
-        </div>
-    }
-}
+const ItemListContainer = () => {
+  
+const cosas = [
+    { tipo : "ojota", marca : "havaianas", talle: "44"},
+    { tipo : "alpargata", marca : "toms", talle: "43"},
+    { tipo : "sandalia", marca : "reef", talle: "42"}
+]
+
+        const [producto, setProducto] = useState ([]);
+
+        const task = () =>
+        new Promise((resolve, reject) =>{
+            setTimeout(() => {
+                resolve(producto);
+            }, 3000);
+        });
+
+        task()
+        .then(
+            (result) =>{
+                console.log(result);
+            }
+            
+        )
+
+
+        return (
+          <div>
+              {setProducto[cosas]}
+          </div>
+        );
+      }
+  
 
 export default ItemListContainer;

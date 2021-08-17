@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from './NavBar';
 import ItemListContainer from './ItemListContainer';
 import ItemCount from './ItemCount';
+import ItemDetailContainer from './ItemDetailContainer';
 
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
         <NavBar/>
         <ItemListContainer nombre="Tom"/>
         <ItemCount/>
+        <ItemDetailContainer/>
       </div>
 );
   }
