@@ -1,32 +1,16 @@
 import React from 'react';
-import ItemList from './ItemList'
+import ItemCount from './ItemCount';
 
-function Item(){
-  return(
-    <div>
-      <h2><ItemList/></h2>
-    </div>
-
-  )
+export default function Item(props) {
+    const {product} = props;
+    return (
+        <div>
+            <img className="small" src={product.foto} alt={product.tipo}></img>
+            <h3>{product.tipo} {product.marca}</h3>
+            <div>${product.precio}</div>
+            <div>
+                <ItemCount />
+            </div>
+        </div>
+    )
 }
-
-  export default Item;
-
-
-  // class Item extends React.Component {
-  //   // constructor (props){
-  //   //   super(props);
-  
-  //   // }
-  
-  //   render() {
-  //       const data =[{"name":"Ojotas", "size": "43", "color":"verde"},{"name":"Alpargatas", "size": "42", "color":"azul"}];
-  //       return (
-  //         <div>
-  //         {data.map(function(prod, id){
-  //            return (<li key={id}>{prod.name} - Color {prod.color} - Talle: {prod.size}</li>)
-  //          })}
-  //         </div>
-  //       );
-  //     }
-  // }

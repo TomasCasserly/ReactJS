@@ -3,11 +3,6 @@ import React, {useState} from 'react';
 
 const ItemListContainer = () => {
   
-const cosas = [
-    { tipo : "ojota", marca : "havaianas", talle: "44"},
-    { tipo : "alpargata", marca : "toms", talle: "43"},
-    { tipo : "sandalia", marca : "reef", talle: "42"}
-]
 
         const [producto, setProducto] = useState ([]);
 

@@ -23,9 +23,9 @@ function Counter() {
     <div>
       
     <div style={{padding: '10px', border: 'solid black 1px', borderRadius: '25px', display: 'flex', justifyContent: 'space-evenly', backgroundColor: "lightblue", width: '400px', height: '60px', marginLeft: 'auto', marginRight: 'auto'}}>
-      <button onClick={add}>Agregar ojotas</button>
+      <button onClick={add}>Agregar</button>
       <h2>{count}</h2>
-      <button onClick={dec}>Retirar ojotas</button>
+      <button onClick={dec}>Quitar</button>
     </div>
     <p style={{color: 'white', marginTop: '10px', border: 'solid black 1px', borderRadius: '25px', display: 'flex', justifyContent: 'space-evenly', backgroundColor: "grey", width: '100px', marginLeft: 'auto', marginRight: 'auto'}}>8 en stock</p>
     </div>
