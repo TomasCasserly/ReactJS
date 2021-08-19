@@ -5,12 +5,14 @@ import "./CompStyle.css";
 import Carrito from "./Carrito";
 import data from "./Data";
 import ItemList from "./ItemList";
+import ItemDetailContainer from "./ItemDetailContainer";
 
 function App() {
   const { products } = data;
   const [cartItems, setCartItems] = useState([]);
 
   return (
+    <div>
     <BrowserRouter>
         <NavBar />
       <Switch>
@@ -24,6 +26,8 @@ function App() {
         </div>
       </Switch>
     </BrowserRouter>
+    <ItemDetailContainer />
+    </div>
   );
 }
 
